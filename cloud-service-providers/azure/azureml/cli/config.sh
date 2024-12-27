@@ -22,25 +22,25 @@
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # AzureML Workspace and corresponding container registry related information
-subscription_id="<your-azure-subscription-id>"
-resource_group="<your-resource-group>"
-workspace="<your-azureml-workspace-name>"
-location="<your-azureml-region>" # eg: "southcentralus", "westeurope" etc.
+subscription_id="b7d41fc8-d35d-41db-92ed-1f7f1d32d4d9"
+resource_group="saurabha-sae-msft"
+workspace="saurabha_aml"
+location="westus2" # eg: "southcentralus", "westeurope" etc.
 
 # Azure keyvault creation related information
-ngc_api_key="<your-ngc-api-key>"
+ngc_api_key="bDByZTRsZjhmOWNyNnVlMmFpYmlqcnJjaHI6YWE5ZGZhYmMtYmRkYi00NjMxLWJmOWEtMTQ4N2RmNTk3NDk1"
 keyvault_name="NGC-Credentials"
-email_address="<your-email-address>"
+email_address="saurabha@nvidia.com"
 
 # Container related information
  # NOTE: Verify that your AML workspace can access this ACR
-acr_registry_name="<your-azureml-registry-name>"
-image_name="<custom-name-for-nim-image>"
-ngc_container="nvcr.io/nim/meta/llama3-8b-instruct:1.0.0"
+acr_registry_name="saurabharegistry"
+image_name="phi-3-mini-4k"
+ngc_container="nvcr.io/nim/microsoft/phi-3-mini-4k-instruct:latest"
 
 # Endpoint related information
-endpoint_name="llama3-8b-nim-endpoint-aml-1"
+endpoint_name="phi-3-mini-4k-nim-endpoint-aml-1"
 
 # Deployment related information
-deployment_name="llama3-8b-nim-deployment-aml-1"
-instance_type="Standard_NC48ads_A100_v4"
+deployment_name="phi-3-mini-4k-deployment-aml-1"
+instance_type="Standard_NC24ads_A100_v4"
