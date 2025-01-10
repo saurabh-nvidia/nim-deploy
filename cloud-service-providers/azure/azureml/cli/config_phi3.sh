@@ -35,16 +35,12 @@ email_address="saurabha@nvidia.com"
 # Container related information
  # NOTE: Verify that your AML workspace can access this ACR
 acr_registry_name="saurabharegistry"
-
 image_name="phi-3-mini-4k"
-
 ngc_container="nvcr.io/nim/microsoft/phi-3-mini-4k-instruct:latest"
 
 # Endpoint related information
 endpoint_name="phi-3-mini-4k-nim-endpoint-aml-1"
 
 # Deployment related information
-# deployment_name="phi-3-mini-4k-trtllm-1"
-deployment_name="phi-3-mini-4k-trtllm-1"
-
+deployment_name="phi-3-mini-4k-deployment-aml-1"
 instance_type="Standard_NC24ads_A100_v4"

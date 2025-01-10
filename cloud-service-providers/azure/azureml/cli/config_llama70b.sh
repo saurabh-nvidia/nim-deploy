@@ -22,6 +22,9 @@
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # AzureML Workspace and corresponding container registry related information
+
+# Uncomment NIM_LOW_MEMORY_MODE: 1 in the deployment.yml file
+
 subscription_id="b7d41fc8-d35d-41db-92ed-1f7f1d32d4d9"
 resource_group="saurabha-sae-msft"
 workspace="saurabha_aml"
@@ -35,16 +38,12 @@ email_address="saurabha@nvidia.com"
 # Container related information
  # NOTE: Verify that your AML workspace can access this ACR
 acr_registry_name="saurabharegistry"
-
-image_name="phi-3-mini-4k"
-
-ngc_container="nvcr.io/nim/microsoft/phi-3-mini-4k-instruct:latest"
+image_name="llama-31-70b-instruct"
+ngc_container="nvcr.io/nim/meta/llama-3.1-70b-instruct:1.3"
 
 # Endpoint related information
-endpoint_name="phi-3-mini-4k-nim-endpoint-aml-1"
+endpoint_name="llama-31-70b-nim-endpoint-aml-1"
 
 # Deployment related information
-# deployment_name="phi-3-mini-4k-trtllm-1"
-deployment_name="phi-3-mini-4k-trtllm-1"
-
-instance_type="Standard_NC24ads_A100_v4"
+deployment_name="llama-31-70b-deployment-aml-1"
+instance_type="Standard_NC48ads_A100_v4"
