@@ -25,4 +25,4 @@ echo "Creating Online Deployment ${deployment_name}"
 az ml online-deployment create -f actual_deployment_aml.yml --resource-group $resource_group --workspace-name $workspace --verbose
 
 # Clean up
-# rm actual_deployment_aml.yml
+rm actual_deployment_aml.yml
